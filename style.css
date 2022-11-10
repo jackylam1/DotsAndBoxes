@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    padding: 10px;
+    text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to right, #ee9ca7, #ffdde1);
+	font-family: sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: full;
+	height: 100vh;
+}
+
+.play-btn {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: pink;;
+	background-color: purple;
+	padding: 0.6em;
+	border-radius: 6px;
+	font-family: sans-serif;
+	font-weight: bold;
+	transition: all 100ms linear;
+	margin-top: 30px;
+}
+
+.play-btn:hover {
+	box-shadow: 0 0 15px magenta inset;
+}
+
+.player-turn {
+	font-family: 1.5em;
+	font-weight: bold;
+	margin-right: 2em;
+}
+
+.primary-heading {
+	font-family: sans-serif;
+	font-size: 2.3em;
+}
+
+button {
+	padding: 0.9em 0.5em;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.player1{
+	margin: 0 auto;
+	color: brown;
+	font-weight: bolder;
+	font-size: 20px;
+
+}
+
+.player2{
+	margin: 0 auto;
+	color: orange;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.player3{
+	margin: 0 auto;
+	color: purple;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+
+.box{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: pink;
+	line-height: 50px;
+	/* border: 2px solid black; */
+
+}
+
+
+
+.dot{
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	background-color: gray;		
+	z-index: 1000;	
+}
+
+.line{
+	position: absolute;
+	background-color: whitesmoke;	
+	cursor: pointer;
+	z-index: 1;	
+
+}
+
+.lineh{
+	height: 5px;
+	width: 50px;
+}
+
+.linev{
+	height: 50px;
+	width: 5px;
+}
+
+.line:hover{
+	background-color: #373737;
+}
+
+.line-active{
+	background-color: #373737;
+}
+
